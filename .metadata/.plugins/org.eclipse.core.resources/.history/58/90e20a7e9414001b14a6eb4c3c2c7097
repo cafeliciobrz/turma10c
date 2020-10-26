@@ -1,0 +1,21 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Aluno;
+
+public class ImplementarAlunoMagica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Aluno aluno = new Aluno(
+				Magica.i("RM"),
+				Magica.s("Nome"), 
+				Magica.s("Email").toLowerCase()
+				);
+		System.out.println(aluno.getAll());
+
+			
+	}
+
+}

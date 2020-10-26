@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\987280108\Desktop\Turma10C\.metadata\.plugins\org.eclipse.jdt.core
+863580383.index
+2406686857.index
+2290215115.index
+1444270623.index
+2830703188.index
+2315375165.index
+1039729478.index

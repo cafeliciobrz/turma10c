@@ -1,0 +1,67 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Professor;
+
+import br.com.unixyz.util.Magica;
+
+public class ImplementarProfessor {
+
+	/*
+	 * 
+	 * 	public static String s(String msg) {
+	 *       returnJOptionPane.showImputDialog(msg).toUpperCase();
+	 *}
+	 *
+	 *public static int i(String msg) {
+     *	    return Integer.parseInt(s(msg));
+	 *}
+     *
+	  */
+	
+	
+
+	public static void main(String[] args) {
+		Professor professor = new Professor();
+		Endereço endereco = new Endereco();
+		
+		//professor.setId(Integer.parseInt(JOptionPane.showInputDialog("ID")));
+		
+		//professor.setId(i(s("ID")));
+		professor.setId(Magica.i("ID"));
+
+		
+		
+		//professor.setNome(JOptionPane.showInputDialog("Nome"));   - depois do public String s olhe abaixo
+		
+		//professor.setNome(s("Nome"));
+		
+		professor.setNome(Magica.s("Nome"));
+		
+		
+		//professor.setFormacao(JOptionPane.showInputDialog("Formacao"));
+		
+		
+		//professor.setFormacao(s("Formacao"));
+		
+		professor.setFormacao(Magica.s("Formacao"));
+		
+		professor.setEndereco(endereco);
+		endereco.setLogradouro(Magica.s("Logradouro"));
+		endereco.setNumero(Magica.s("Numero"));
+		endereco.setBairro(Magica.s("Bairro"));
+		endereco.setCidade(Magica.s("Cidade"));
+		endereco.setEstado(Magica.s("Estado"));
+		endereco.setCep(Magica.s("Cep"));
+		
+		//seguiria preenchendo os outros atributos
+		
+		
+		System.out.println(professor.getAll());
+	}
+	
+	
+	
+
+}

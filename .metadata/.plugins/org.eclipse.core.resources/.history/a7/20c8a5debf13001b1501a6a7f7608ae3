@@ -1,0 +1,19 @@
+package br.com.concessionaria.modelo;
+
+public class Formula1 {
+   private String cor;
+   private String escuderia:
+   private boolean status;
+   private float velocidadeAtual;
+   private float valor;
+   //Sintaxe para os metodos
+   // <modificador> <tipo do retorno> <nomeMetodo> (<TipoParam> <nomeParam>){
+   public void preencherEscuderia(Strong pEscuderia) {
+	   escuderia=pEscuderia.ToUpperCase();
+	   
+   }
+
+
+
+
+}// Fechar Classe

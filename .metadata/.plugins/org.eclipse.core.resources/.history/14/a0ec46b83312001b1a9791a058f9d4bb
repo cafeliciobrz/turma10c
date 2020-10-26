@@ -1,0 +1,34 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Variavel {
+
+	public static void main(String[] args) {
+		/*
+		 * Tipods de Dados=>
+		 * Alfanuméricos (String):é o dado que não pode ser utilizado em operações aritméticas.
+		 * CEP=> 00010-009
+		 * Numérico (int/double): é o dado que pode ser utilizado em operações aritméticas. 
+		 * Deve tocar cuidado com contextos de caracteristicas do sistema
+		 * exemplo CEP x Itau X Correio
+		 * =>int	=> para números inteiros
+		 * =>double	=> para números reais (com casas decimais)
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Informe seu Nome");
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua Idade"));
+		double altura = Double.parseInt(JOptionPane.showInputDialog("Digite sua Altura"));
+		double peso = Double.parseInt(JOptionPane.showInputDialog("Digite seu PESO"));
+		double imc = peso / (altura*altura);
+		//System.out.printf("Sr (a) %s, você tem %d anos de idade. Seu IMC é %.2f\n",nome,idade,icm);
+		System.out.println("Usuário.: "+nome);
+		System.out.println("Idade...: "+idade);
+		//%f => numeros reais 
+		//%s => Strings
+		//%d => inteiros
+		System.out.printf("IMC.....: %.2f",imc);
+
+	}
+
+}

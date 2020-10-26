@@ -1,0 +1,44 @@
+package br.com.concessionaria.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.concessionaria.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		// Criar um objeto, Crtl+Shift+O para importar
+		//Formula1 objeto = null;
+		//String nome = "";
+		//Instanciar um objeto é o correto
+		// inserir metodo e se não aparecer, importar com ctrl+shift+S
+		Formula1 carro = new Formula1();
+		//Aqui entrada de valores para retorno
+		carro.preencherEscuderia(JOptionPane.showImputDialog("Escuderia"));
+		carro.preencherValor((float) 100.10);
+		carro.preencherCor("Preto");
+		System.out.println(carro.retornarEscuderia());
+		System.out.println(carro.retornarValor());
+		System.out.println(carro.retornarCor());
+		System.out.println(carro.retornarLiga());
+		System.out.println(carro.retornarDesliga());
+		/*
+		 * Opção de pergunta e execução
+		 * Ou if (JOptionPane.showConfirmDialog(null, "Ligar?", "Pergunta", JOptionPane.Yes_No_OPTION)==0){
+		 *       System.out.println(carro.ligar());
+		 *    }else{
+		 *       System.out.println(carro.desligar());
+		 *    }
+		 */
+		
+		carro.acelerar(50);
+		carro.acelerar(30);		
+		System.out.println(carro.retornarVelocidadeAtual());	
+		carro.desacelerar(40);
+		System.out.println(carro.retornarVelocidadeAtual());
+	
+
+		
+	}
+
+}

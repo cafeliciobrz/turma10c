@@ -1,0 +1,32 @@
+package Decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		// Hotel cobra R$ 80,00 diaria + taxa de serviço
+		// Taxas de serviço
+		// R$ 5.50 dia se hospedagem > 15 dias
+		// R$ 6.00 dia se hospedagem = 15 dias
+		// R$ 8.00 dia se hospedagem < 15 dias
+		// Escreva código que leta 3 valores inteiros e diferentes e mostre em ordem descrecente
+		int diaria  = 80.00;
+		int dias  = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do Produto"));
+		if (dias>15) {
+			int dma15 == 5.50;
+			double valordias = diaria*dma15;
+			JOptionPane.showMessageDialog(null, "Sua hospedagem é " + dias " com valor de R$ 5.50. Total a ser pago é R$ " + valordias);
+		} else if (dias==15) {
+			int dma15 == 6.00
+			double valordias = diaria*dma15;
+			JOptionPane.showMessageDialog(null, "Sua hospedagem é " + dias " com valor de R$ 6.00. Total a ser pago é R$ " + valordias);
+		}else {
+			int dme15 == 8.00
+			double valordias = diaria*dme15;
+			JOptionPane.showMessageDialog(null, "Sua hospedagem é " + dias " com valor de R$ 6.00. Total a ser pago é R$ " + valordias);
+		}
+
+	}
+
+}

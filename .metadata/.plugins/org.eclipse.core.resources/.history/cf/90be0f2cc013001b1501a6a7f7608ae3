@@ -1,0 +1,21 @@
+package br.com.concessionaria.teste;
+
+import br.com.concessionaria.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		// Criar um objeto, Crtl+Shift+O para importar
+		Formula1 objeto = null;
+		String nome = "";
+		//Instanciar um objeto é o correto
+		Formula1 carro = new Formula1();
+		
+		// inserir metodo e se não aparecer, importar com ctrl+shift+S
+		carro.preencherEscuderia("Ferrari");
+		System.out.println(carro.retornarEscuderia());
+		
+
+	}
+
+}

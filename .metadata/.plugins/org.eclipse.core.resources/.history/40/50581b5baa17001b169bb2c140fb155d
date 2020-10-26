@@ -1,0 +1,25 @@
+package br.com.excecoes.implementacao;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		// Excecoes: nao sao controladas pelo programador
+		// Existem dois tipos:
+		// A) Checked : O java verifica
+		try {
+			int numro = Integer.parse.Int("A");
+			System.out.println("Resultado = " + (numero *10));
+
+		}catch(Exception e) {
+			System.out.println("Deu ruim");
+
+
+		}finally {
+			System.out.println("Ate LOGO!!!");
+		}
+
+
+
+
+
+	}

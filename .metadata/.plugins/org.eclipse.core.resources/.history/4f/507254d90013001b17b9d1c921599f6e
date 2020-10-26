@@ -1,0 +1,15 @@
+package Repeticao;
+
+public class ExemploDo2 {
+
+	public static void main(String[] args) {
+		String candidato="";
+		int totalx=0
+		int totalY=0;
+		do {
+			candidato = JOptionPane.showImputDialog("Digite <X> ou <Y>").toUpperCase();
+		}while(candidato.contentEquals("X") || candidato.contentEquals("Y"));
+
+	}
+
+}

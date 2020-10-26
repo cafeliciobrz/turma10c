@@ -1,0 +1,21 @@
+package variaveis;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		// Crie as variaveis para armazenar:
+		//nome do produto, codigo, valor e qtde.
+		//Exiba no final o nome do produto, o totaol e o total com 10% de desconto.
+		String prodnome = "Sabonete";
+		int prodcodigo  = 45;
+		double valor = 1.70;
+		String qtde = 20;
+		double total = qtde*valor;
+		double proddesc = total*0.9;
+		System.out.println("Produto............:" + prodnome);
+		System.out.println("Total..............:" + total);
+		System.out.println("Total com Desconto.:" + proddesc);
+
+	}
+
+}

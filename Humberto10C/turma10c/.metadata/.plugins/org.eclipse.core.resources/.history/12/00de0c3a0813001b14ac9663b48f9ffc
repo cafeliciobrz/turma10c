@@ -1,0 +1,24 @@
+package repeticao;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		/*
+		 * Um jogo de advinhação.
+		 * O jogador 1 digita um número inteiro
+		 * O jogador 2 tem que advinhar o número que foi digitado pelo jogador 1
+		 * Enquanto ele não acertar o jogo continua perguntando o número.
+		 * 
+		 * Etapa2:
+		 * Acrescente uma contagem de tentativas do jogador 2, e apresente
+		 * quantas tentativas ele usou para acertar o número
+		 * 
+		 * Etapa3:
+		 * Acrescente dicas, para o jogador 2, indicando se o número que 
+		 * ele está tentando advinhar é maior ou menor do que o que ele chutou.
+		 * 
+		 */
+
+	}
+
+}

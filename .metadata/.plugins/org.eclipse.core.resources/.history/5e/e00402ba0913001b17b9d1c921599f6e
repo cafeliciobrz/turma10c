@@ -1,0 +1,54 @@
+package Repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		 /*String candidato="";
+		 *int totalX=0;
+		 *int totalY=0;
+		 *do {
+		 *	candidato = JOptionPane.showInputDialog("Digite <X> ou <Y>").toUpperCase();
+		 *	if (candidato.equals("X")) {
+		 *		totalX=totalX+1;
+		 *	}else if (candidato.equals("Y")) {
+		 *		totalY=totalY+1;
+		 * 	}
+		 *}while(candidato.equals("X") || candidato.equals("Y"));
+		 *System.out.println("Total do candidato X: " + totalX);
+		 *System.out.println("Total do candidato Y: " + totalY);
+		 * Um jogo de advinhação.
+		 * O jogador 1 digita um número inteiro
+		 * O jogador 2 tem que advinhar o número que foi digitado pelo jogador 1
+		 * Enquanto ele não acertar o jogo continua perguntando o número.
+		 * 
+		 * Etapa2:
+		 * Acrescente uma contagem de tentativas do jogador 2, e apresente
+		 * quantas tentativas ele usou para acertar o número
+		 * 
+		 * Etapa3:
+		 * Acrescente dicas, para o jogador 2, indicando se o número que 
+		 * ele está tentando advinhar é maior ou menor do que o que ele chutou.
+		 */
+		int numero  = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1, entre com número"));
+		int conta=0;
+		do {
+			conta=conta+1;
+			int advinha  = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2, tente ADVINHAR o número do Jogador1"));
+			if (numero.equals(advinha)) {
+				conta=conta+1;
+				advinha  = Integer.parseInt(JOptionPane.showInputDialog("Errou, tente ADVINHAR novamente"));
+			}else if (advinha<numero) {
+				conta=conta+1;
+				advinha  = Integer.parseInt(JOptionPane.showInputDialog("Errou, o número foi menor, tente ADVINHAR novamente"));
+			}else if (advinha>numero) {
+				conta=conta+1;
+				advinha  = Integer.parseInt(JOptionPane.showInputDialog("Errou, o número foi maior, tente ADVINHAR novamente"));
+			}
+		}
+		JOptionPane.showMessageDialog(null, advinha + "Jogador 2, você acertou o número inserido pelo Jogador 1 com " + conta + "tentativas" );
+
+	}
+
+}

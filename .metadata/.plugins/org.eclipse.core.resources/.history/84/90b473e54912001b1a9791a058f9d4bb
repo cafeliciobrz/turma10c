@@ -1,0 +1,17 @@
+package Decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoSimples {
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.ShowInputDialog("Digite o nome").toUpperCase();
+		float nota1 = Float.parseFloat(ShowInputDialog("Digite Nota 1"));
+		float nota2 = Float.parseFloat(ShowInputDialog("Digite Nota 2"));
+		float media = (nota1+nota2)/2; 
+        if (media>=6) {
+        	System.out.println("Aprovado com media..:" + media);
+        }
+	}
+
+}

@@ -1,0 +1,52 @@
+package br.com.unixyz.modelo;
+
+public class Medio extends{
+	private String tipo;
+	private double calcMensalidade;
+	
+	
+	
+
+	
+	
+	public String getAll() {
+		return
+				super.getAll() + "\n" +
+				"Tipo.....:" + tipo + "\n" +
+				"Calculo Mensal" + calMensalidade;
+				
+				
+	}
+	
+	
+	
+	public Medio(String tipo, double calcMensalidade) {
+		super();
+		this.tipo = tipo;
+		this.calcMensalidade = calcMensalidade;
+	}
+	
+	
+	
+	public Medio() {
+		super();
+	}
+
+
+
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public double getCalcMensalidade() {
+		return calcMensalidade;
+	}
+	public void setCalcMensalidade(double calcMensalidade) {
+		this.calcMensalidade = calcMensalidade;
+	}
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		// Crie as variaveis para armazenar:
+		//nome do produto, codigo, valor e qtde.
+		//Exiba no final o nome do produto, o totaol e o total com 10% de desconto.
+		String prodnome = JOptionPane.showInputDialog("Informe seu produto");
+		int prodcod  = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do Produto"));
+		double prodvalor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do produto"));
+		double prodqtde = Double.parseDouble(JOptionPane.showInputDialog("Digite quantidade do produto"));
+		double prodtotal = qtde*valor;
+		double proddesc = total*0.9;
+		System.out.println("Produto............:" + prodnome);
+		System.out.println("Total..............:" + prodtotal);
+		System.out.println("Total com Desconto.:" + proddesc);
+
+	}
+
+}

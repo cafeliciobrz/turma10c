@@ -1,0 +1,71 @@
+package br.com.unixyz.modelo;
+
+public class Bacharelado extends Formacao{
+	private int cargaHorarioEstagio;
+	private String trabalhoConclusao;
+	
+
+	public void calcMensalidade (double fator) {
+		super.setMensalidade(super.getMensalidade() * 600 * (float) fator) +(cargaHorariaEstagio*);
+	}
+	
+	
+	
+	public String getAll() {
+		return
+				super.getAll() + "\n" +
+				"Carga Horário do Estágio.: " + cargaHorariaEstagio + "\n" +
+				"Trabalho Conclusao.......: " + trabalhoConclusao;
+	}
+	
+	
+	
+	
+	
+	public void setAll(String descricao, int duracao, float mensalidade, int caraHorarioEstagio,
+			String trabalhoConclusao) {
+		super.setAll(descricao, duracao, mensalidade);
+		this.cargaHorarioEstagio = cargaHorarioEstagio;
+		this.trabalhoConclusao = trabalhoConclusao;
+	}
+
+
+
+
+
+	public Bacharelado(String descricao, int duracao, float mensalidade, int cargaHorarioEstagio,
+			String trabalhoConclusao) {
+		super(descricao, duracao, mensalidade);
+		this.cargaHorarioEstagio = cargaHorarioEstagio;
+		this.trabalhoConclusao = trabalhoConclusao;
+	}
+	
+	
+	
+	
+	
+	public Bacharelado(String descricao, int duracao, float mensalidade) {
+		super(descricao, duracao, mensalidade);
+	}
+
+
+
+
+
+	public int getCargaHorarioEstagio() {
+		return cargaHorarioEstagio;
+	}
+	public void setCargaHorarioEstagio(int caraHorarioEstagio) {
+		this.cargaHorarioEstagio = caraHorarioEstagio;
+	}
+	public String getTrabalhoConclusao() {
+		return trabalhoConclusao;
+	}
+	public void setTrabalhoConclusao(String trabalhoConclusao) {
+		this.trabalhoConclusao = trabalhoConclusao;
+	}
+	
+	
+	
+
+}

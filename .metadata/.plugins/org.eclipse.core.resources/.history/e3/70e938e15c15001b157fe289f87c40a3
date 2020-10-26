@@ -1,0 +1,54 @@
+package br.com.unixyz.modelo;
+
+public class Tecnologo extends Formacao {
+	private boolean planoEstendido;
+
+
+	
+	public float calcMensalidade( float n1, float n2, float proj1, float proj2) {
+		return n1*(float)0.4 + n2*(float)0.4 + proj1*(float)0.1 + proj2*(float)0.1;
+	}
+		
+	
+	
+	public String getAll() {
+		return 
+				super.getAll() + "\n" + "PlanoEstendido:" + planoEstentido;
+	}
+	
+	
+	
+	
+	
+	public void setAll(String descricao, int duracao, float mensalidade, boolean planoEstendido) {
+		super.setAll(descricao, duracao, mensalidade);
+		this.planoEstendido = planoEstendido;
+	}
+
+
+
+	public Tecnologo(String descricao, int duracao, float mensalidade, boolean planoEstendido) {
+		super(descricao, duracao, mensalidade);
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+
+	public Tecnologo(String descricao, int duracao, float mensalidade) {
+		super(descricao, duracao, mensalidade);
+	}
+
+
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+	
+
+}

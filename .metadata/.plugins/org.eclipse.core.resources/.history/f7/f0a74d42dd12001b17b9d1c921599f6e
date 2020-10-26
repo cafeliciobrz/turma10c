@@ -1,0 +1,31 @@
+package Decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioComposto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Peça entrada do veiculo, capacidade
+		//exiba manegsa
+		//Categoria A, se qtde passageiros for igual a 2
+		//categoria B, se qtde passageiros  estiver entre 4 e 7
+		//Categoria C, se qtde passageiros for maior que 7
+		String marca = JOptionPane.showInputDialog("Entre marca do veiculo").toUpperCase();
+		String modelo = JOptionPane.showInputDialog("Entre modelo do veiculo").toUpperCase();
+		byte capacidade = Short.parseShort(JOptionPane.showInputDialog("Digite a quantidade de passageiros"));
+		if (capacidade==2) {
+			JOptionPane.showMessageDialog(null, "O carro marca" + marca + "e modelo " + modelo + "com capacidade = " + capacidade + " esta na CATEGORIA A);
+		}else if (capacidade>7) {
+			JOptionPane.showMessageDialog(null, "O carro marca" + marca + "e modelo " + modelo + "com capacidade = " + capacidade + " esta na CATEGORIA C);
+		}else if (capacidade>=4  || capacidade<=7) {
+			JOptionPane.showMessageDialog(null, "O carro marca" + marca + "e modelo " + modelo + "com capacidade = " + capacidade + " esta na CATEGORIA B);
+		}else {
+			JOptionPane.showMessageDialog(null, "Categoria inválida");
+		}
+			
+
+
+	}
+
+}

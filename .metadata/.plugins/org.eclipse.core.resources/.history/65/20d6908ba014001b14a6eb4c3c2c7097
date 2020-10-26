@@ -1,0 +1,10 @@
+package br.com.unixyz.modelo;
+
+public class Curso {
+	private int id;
+	private String descrição;
+	private float valor;
+	private int cargaHoraria;
+	
+
+}

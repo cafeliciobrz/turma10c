@@ -1,0 +1,33 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String email = "reGina@gama.Academy";
+		System.out.println("Original           : " + email);
+		System.out.println("Minuscula          : " + email.toLowerCase());
+		System.out.println("Maiscula           : " + email.toUpperCase());
+		System.out.println("Qtidade Caracteres : " + email.length());
+		System.out.println("Posição do @       : " + email.indexOf("@"));
+		System.out.println("Exibir do 2 até 4  : " + email.substring(1,4));
+		System.out.println("Exibir 3 até fim   : " + email.substring(2));
+		//System.out.println("Exibir 3 até fim   : " + email.substring(0, email.length()/2));
+		
+		//Exibir o usuário do email (antes do @)
+		System.out.println("usuário            : " + email.substring(0, email.indexOf("@")));
+		
+		
+		//Exibir o usuário do email (depois do @)
+		System.out.println("Domínio       : " + email.substring(email, indexOf("@")+1));
+		
+		System.out.println("Primeiro Caracter  : " + email.charAt(4));
+		
+		
+		
+
+	}
+
+}
